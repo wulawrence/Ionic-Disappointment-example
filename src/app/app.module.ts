@@ -3,10 +3,13 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MagicBall } from '../providers/magic-ball/magic-ball';
+import { ServiceproviderProvider } from '../providers/serviceprovider/serviceprovider';
+import { GithubGetterProvider } from '../providers/github-getter/github-getter';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,7 @@ import { MagicBall } from '../providers/magic-ball/magic-ball';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -26,7 +30,9 @@ import { MagicBall } from '../providers/magic-ball/magic-ball';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MagicBall
+    MagicBall,
+    ServiceproviderProvider,
+    GithubGetterProvider
   ]
 })
 export class AppModule {}
