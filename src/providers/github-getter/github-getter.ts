@@ -18,12 +18,14 @@ export class GithubGetterProvider {
     return this.http
       .get(`https://api.github.com/users/${userName}`);
   }
-  postUser(){
-  //   const req = this.http.post('http://jsonplaceholder.typicode.com/posts', {
-  //     title: 'foo',
-  //     body: 'bar',
-  //     userId: 1
-  //   }).subscribe(res => { console.log(res); }, err => { console.log("Error occured");
-  //   });
-  // };
+
+  // postUser() {
+  //     const req = this.http.post('http://jsonplaceholder.typicode.com/posts', {
+  //       title: 'foo',
+  //       body: 'bar',
+  //       userId: 1
+  //     }).subscribe(res => { console.log(res); }, err => { console.log("Error occured");
+  //     });
+  //   };
 }
+

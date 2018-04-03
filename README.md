@@ -6,8 +6,8 @@ Then npm install.
 
 Then make sure your jasmine is working. 
 
-'''npm install jasmine'''
+''npm install jasmine''
 
 If that does not work, then 
 
-'''npm install --save-dev @types/jasmine'''
+''npm install --save-dev @types/jasmine''
