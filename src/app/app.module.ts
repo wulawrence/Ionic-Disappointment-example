@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { MagicBall } from '../providers/magic-ball/magic-ball';
 import { ServiceproviderProvider } from '../providers/serviceprovider/serviceprovider';
 import { GithubGetterProvider } from '../providers/github-getter/github-getter';
+import { Auth0Provider } from '../providers/auth0/auth0';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { GithubGetterProvider } from '../providers/github-getter/github-getter';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     MagicBall,
     ServiceproviderProvider,
-    GithubGetterProvider
+    GithubGetterProvider,
+    Auth0Provider
   ]
 })
 export class AppModule {}
